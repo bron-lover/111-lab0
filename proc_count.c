@@ -6,6 +6,8 @@
 
 static struct proc_dir_entry *entry;
 
+static struct task_struct *p;
+
 static int proc_count(struct seq_file *m, void *v)
 {
 	int p_count = 0;
