@@ -13,6 +13,7 @@ sudo insmod proc_count.ko
 cat /proc/count
 ```
 Results (in stdout):
+
 150
 
 ## Cleaning Up
@@ -26,6 +27,7 @@ make clean
 python -m unittest
 ```
 Results (in stdout):
+
 Ran 3 tests in 33.243s
 
 OK
