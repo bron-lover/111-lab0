@@ -40,4 +40,5 @@ It should match release numbers as seen on https://www.kernel.org/.
 uname -r -s -v
 ```
 Kernel Version:
+
 Linux 5.14.8-arch1-1 #1 SMP PREEMPT Sun, 26 Sep 2021 19:35:15 +0000
