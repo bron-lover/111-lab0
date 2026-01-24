@@ -1,6 +1,6 @@
 # A Kernel Seedling
 
-This lab implements a kernel module that produces a /proc/count file that when read returns the current number of running processes.
+This lab implements a kernel module that produces a /proc/count file that when read returns the current number of running processes. We needed to implement a kernal module because you cannot access information such as the number of running processes through a normal user-space program. Exposing this inofrmation can only be done by a program that runs inside the kernel. To actually implement this functionality, I initialized a task_struct variable combined with for_each_process to iterate through all active processes, incremeting a count variable each time. Then I used seq_printf to write this number into the /proc directory.
 
 ## Building
 ```shell
